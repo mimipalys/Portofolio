@@ -1,0 +1,8 @@
+{
+  "hero": {
+    "title": "Välkommen till Muhamed Khatibs portfolio hemsida",
+    "description": "Utforska mina projekt, forskning och 3D-experiment",
+    "footer1": "Byggt med React, TailwindCSS och Three.js",
+    "footer2": "Denna webbplats visar upp personligt eller samarbetsbaserat arbete"
+  }
+}
