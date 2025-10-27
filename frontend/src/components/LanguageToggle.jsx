@@ -12,7 +12,7 @@ export default function LanguageToggle() {
   return (
     <button
       onClick={toggleLanguage}
-      className="fixed top-4 left-4 z-50 bg-white/10 text-white text-sm px-3 py-1 rounded-full hover:bg-white/20 transition-colors"
+      className=" lang-btn border border-[#11224E] text-white px-3 py-1 rounded-md hover:bg-white hover:text-[#11224E] transition duration-200"
       title="Change language"
     >
       {currentLang === "en" ? "sv" : "en"}
