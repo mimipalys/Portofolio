@@ -28,7 +28,7 @@ function FallingDinos({ count = 15 }) {
         y: Math.random() * 10 + 10,     // start above screen
         z: (Math.random() - 0.5) * 5, // 👈 more depth variety
         speed: Math.random() * 0.5 + 0.2,
-        scale: Math.random() * 0.5 + 0.4, // size range
+        scale: Math.random() * 0.5 + 0.3, // size range
         rotationSpeed: (Math.random() - 0.5) * 0.01,
         };
         tries++;
@@ -42,7 +42,7 @@ function FallingDinos({ count = 15 }) {
 
   useFrame((state) => {
     dinos.current.forEach((dino) => {
-      dino.y -= dino.speed * 0.08;
+      dino.y -= dino.speed * 0.05;
       if (dino.y < -15) dino.y = Math.random() * 8 + 7;
     });
 
