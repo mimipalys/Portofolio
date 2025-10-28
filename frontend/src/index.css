@@ -95,6 +95,7 @@ canvas {
     hsla(224, 93%, 5%, 0.5) 100%
   );
   margin-top: -1.9%;
+  padding-bottom: 4%;
 }
 
 .links-section h1{
@@ -154,12 +155,12 @@ canvas {
 .project-dino-section {
   position: relative;
   width: 100%;
-  min-height: 80vh;
+  min-height: 100vh;
   padding: 2rem;
 
  background-image:
     linear-gradient(
-      to bottom,
+      to top,
       hsla(224, 93%, 5%, 0.9) 0%,
       hsla(224, 93%, 5%, 0) 50%,
       hsla(224, 93%, 5%, 0.9) 100%
@@ -175,6 +176,8 @@ canvas {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  margin-top: -2.7%;
 }
 
 .project-dino-title {
@@ -246,3 +249,100 @@ canvas {
   color: inherit;
   text-decoration: underline;
 }
+
+/* === Project Carpool Section Styles === */
+
+.project-carpool-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+
+ background-image:
+    linear-gradient(
+      to top,
+      hsla(224, 93%, 5%, 0.9) 0%,
+      hsla(224, 93%, 5%, 0) 50%,
+      hsla(224, 93%, 5%, 0.9) 100%
+    ),
+    url("/images/carpool.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  color: white;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-top: -2.3%;
+}
+
+.project-carpool-title {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 1%;
+}
+
+.project-carpool-title .arrow {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.project-carpool-title:hover{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1%;
+}
+
+.project-carpool-description {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  max-width: 400px;
+  line-height: 1.5;
+  transition: opacity 0.3s ease;
+  text-align: justify;
+}
+
+.project-carpool-link {
+  position: relative;
+  display: inline-block; /* shrink to logo size */
+  width: fit-content;
+  position: relative;
+  display: inline-block; /* keep size to logo */
+  width: fit-content;
+  margin: 0 auto;     
+
+}
+
+.project-carpool-link p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #EEEEEE;
+  font-size: xx-large;
+  font-weight: 600;
+  text-align: center;
+  background-color: hsla(0, 57%, 32%, 0.883);
+  pointer-events: auto; /* allow anchors inside the text to be clickable */
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  width: 350px;
+  padding: 5rem;
+  border-radius: 25px;
+  text-decoration: underline;
+}
+
+.project-carpool-link:hover p {
+  color: black;
+}
+
+

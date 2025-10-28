@@ -7,7 +7,7 @@ export default function SectionProjectDino() {
 
   return (
     <section
-      className="project-dino-section">
+      className="project-dino-section mask-t-from-95%">
 
 
       {/* Title + dropdown */}
@@ -34,12 +34,12 @@ export default function SectionProjectDino() {
           className="project-dino-logo"
         />
         <p>
-          download the game on{" "}
-          <a href="/documents/DinoDodgeball-windos.zip" className="italic underline-offset-2">
+          {t("dino.download")}{" "}
+          <a href="/documents/DinoDodgeball-windos.zip" className="italic underline decoration-pink-500/30 text-color-white">
             mac
           </a>{" "}
-          or{" "}
-          <a href="/documents/DinoDodgeball(macOs).zip" className="italic underline-offset-2">
+          {t("dino.or")}{" "}
+          <a href="/documents/DinoDodgeball(macOs).zip" className="italic underline decoration-pink-500/30 text-color-white">
             windows
           </a>
         </p>
