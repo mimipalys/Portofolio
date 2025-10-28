@@ -3,6 +3,7 @@ import DinoBackground from "./components/DinoBackground";
 import SectionHero from "./components/SectionHero";
 import SectionLinks from "./components/SectionLinks";
 import SectionProjectDino from "./components/SectionProjectDino";
+import SectionProjectWeb from "./components/SectionProjectweb";
 
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
       <SectionHero />
       <SectionLinks />
       <SectionProjectDino />
+      <SectionProjectWeb />
     </div>
   );
 }

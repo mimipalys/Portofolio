@@ -15,6 +15,11 @@
     "discription": "Dino Dodgeball is a game I created alongside my friends for a project. It was a fun project for me and my friends brainstorming ideas on how to implement serious games. This game was made with kids in mind who face challenges in spelling and using words. Here, I learned how to use Blender and Unity for the first time, and that’s how I came up with creating Dino, the flying dinosaur (and no, he’s not a dragon). The story behind it is that Dino, the protagonist, was playing dodgeball with his girlfriend when suddenly, evil enemies kidnapped her. Now Dino has to play dodgeball against them. Every time you (the player) spell a word correctly, you help Dino win and get closer to freeing his girlfriend and their egg. Otherwise, Dino loses, and the game sadly would be over :,( Please feel free to click the link, download the game, explore, and have fun; hopefully as much as we did creating it!",
     "download": "download the game on",
     "or": "or"
+  },
+
+  "idiba": {
+    "discription": "Idi.ba was my first look into software engineering. The course was taught by an industry expert, and the aim of the project was to encourage students to innovate and learn. This project was my first window into industry-like style programming: learning coding ethics, file management, and more. Idi.ba was an idea created based on the need and convenience of bringing carpooling to Bosnian cities such as Sarajevo. The website was also adapted to the local language. It was built using Java Spring and Angular. In the end, through this website, I learned the ethics of programming and software engineering , and my love for it grew through this project.",
+    "link": "click here to visit Idi.ba"
   }
 }
 
