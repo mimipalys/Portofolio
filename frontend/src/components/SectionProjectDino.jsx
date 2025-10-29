@@ -35,11 +35,11 @@ export default function SectionProjectDino() {
         />
         <p>
           {t("dino.download")}{" "}
-          <a href="/documents/DinoDodgeball-windos.zip" className="italic underline decoration-pink-500/30 text-color-white">
+          <a href="/documents/DinoDodgeball-windos.zip" className="mac">
             mac
           </a>{" "}
           {t("dino.or")}{" "}
-          <a href="/documents/DinoDodgeball(macOs).zip" className="italic underline decoration-pink-500/30 text-color-white">
+          <a href="/documents/DinoDodgeball(macOs).zip" className="windows">
             windows
           </a>
         </p>

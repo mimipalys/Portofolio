@@ -1,0 +1,273 @@
+#structure header {
+    margin-top: 25px;
+}
+
+.bone {
+    position: relative;
+    top: 20px;
+    width: 600px;
+    z-index: 9999;
+}
+
+.s1, .s2, .s3, .s4 {
+    background-image: url("/images/grey_wood.jpg");
+    box-shadow: 0 0 0 black;
+    height: 250px;
+    width: 250px;
+    border: 5px solid rgb(71, 71, 71);
+    border-radius: 200px;
+    position: absolute;
+}
+
+.s1 {
+    left: -300px;
+}
+
+.s2 {
+    right: -300px;
+}
+
+.s3 {
+    top: 205px;
+    left: -300px;
+}
+
+.s4 {
+    right: -300px;
+    top: 205px;
+}
+
+.centerbone {
+    background-image: url("/images/grey_wood.jpg");
+    box-shadow: 0 0 0 black;
+    height: 300px;
+    width: 238px;
+    border: 5px solid rgb(71, 71, 71);
+    position: absolute;
+    left: -54px;
+    top: 78px;
+    border-width: 5px 260px 5px 210px;
+}
+
+.clean {
+    background-image: url("/images/grey_wood.jpg");
+    box-shadow: 0 0 0 black;
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    left: -350px;
+    border-radius: 1000px;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 0 0 0 black;
+}
+
+.logo img {
+    margin-top: 40px;
+    margin-left: 140px;
+    width: 100%;
+}
+
+#structure {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 0 0 black;
+    position: absolute;
+    bottom: 0;
+    margin-left: 480px;
+}
+
+.menubtn {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.menubtn:hover {
+    opacity: .7;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(71, 71, 71);
+    margin: 6px 0;
+    transition: 0.4s;
+    box-shadow: 0 0 0 black;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(158, 141, 126, 0.8);
+    min-width: 704px;
+    margin-left:-338px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    cursor: initial;
+}
+
+.whitedogbone {
+    padding-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0 0 0 black;
+}
+
+.dropdown-content a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+#structure h2 {
+    text-align: center;
+    margin-left: 5px;
+    color: aliceblue;
+    letter-spacing: 5px;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    font-family: "Comic Sans MS";
+}
+
+.bone_btn a:hover {
+    color: #b1561a;
+    font-weight: bolder;
+}
+
+.show {
+    display: block;
+}
+
+.bone_btn div {
+    box-shadow: 0 0 0 black;
+}
+
+.bone_btn {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.bone_btn a {
+    font-family: "Comic Sans MS";
+}
+
+.c1, .c2, .c3, .c4 {
+    background:#fff;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    position:absolute;
+}
+
+.c1 {
+    left: 0;
+    top: 0;
+}
+
+.c2 {
+    right: 0;
+    top: 0;
+}
+
+.c3 {
+    left: 0;
+    bottom: 0;
+}
+
+.c4 {
+    bottom: 0;
+    right: 0;
+}
+
+.b1 {
+    background: #fff;
+    height: 30px;
+    width: 120px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.b2 {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+#b3{
+    font-size: 8.6pt;
+}
+
+#structure section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 75px;
+    margin-right: 75px;
+    padding-bottom: 25px;
+}
+
+.vl {
+    border-right: 1px solid white;
+    height: 50%;
+    display: inline-block;
+    margin-top: 45px;
+    margin-bottom: 0px;
+    position: absolute;
+    left: 352px;
+    text-align: center;
+    box-shadow: 0 0 0 black;
+}
+
+.logo a {
+    display: contents;
+}
+
+@media only screen and (max-width: 500px) {}
