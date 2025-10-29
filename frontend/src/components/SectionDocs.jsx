@@ -5,7 +5,7 @@ export default function DocsSection() {
     const { t } = useTranslation();
 
   return (
-    <section className=" docs-section relative w-full min-h-[50vh] px-6 py-12 z-20 text-white">
+    <section className=" docs-section relative w-full min-h-[30vh] px-6 py-12 z-20 text-white">
       {/* Section title */}
       <h1 className="text-3xl font-bold ml-6">
         {t("docs.Docs")}

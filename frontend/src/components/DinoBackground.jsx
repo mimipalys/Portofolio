@@ -7,53 +7,88 @@ function FallingDinos({ count = 15 }) {
   const group = useRef();
   const dinos = useRef([]);
 
-  useEffect(() => {
-    const dinosArray = [];
+// ...existing code...
+useEffect(() => {
+  const dinosArray = [];
 
-    function isTooClose(newDino, others) {
-      return others.some((d) => {
-        const dx = d.x - newDino.x;
-        const dz = d.z - newDino.z;
-        return Math.sqrt(dx * dx + dz * dz) < 1.5;
-      });
+  function isTooClose(newDino, others) {
+    return others.some((d) => {
+      const dx = d.x - newDino.x;
+      const dz = d.z - newDino.z;
+      return Math.sqrt(dx * dx + dz * dz) < 1.5;
+    });
+  }
+
+  for (let i = 0; i < count; i++) {
+    let newDino;
+    let tries = 0;
+
+    do {
+      newDino = {
+        x: (Math.random() - 0.5) * 8,
+        y: Math.random() * 10 + 6,
+        z: (Math.random() - 0.5) * 6,
+        speed: Math.random() * 0.1 + 0.08,
+        scale: Math.random() * 0.15 + 0.07,
+        // Add rotation for all 3 axes
+        rotationX: Math.random() * Math.PI * 2,
+        rotationY: Math.random() * Math.PI * 2,
+        rotationZ: Math.random() * Math.PI * 2,
+        // Rotation speeds (how fast they tilt/spin)
+        rotationSpeedX: (Math.random() - 0.5) * 0.015,  // Forward/backward tilt
+        rotationSpeedY: (Math.random() - 0.5) * 0.015,  // Left/right spin
+        rotationSpeedZ: (Math.random() - 0.5) * 0.015,  // Barrel roll
+        // Add wobble for more organic movement
+        wobbleSpeed: Math.random() * 0,
+        wobbleAmount: Math.random() * 0,
+      };
+      tries++;
+    } while (isTooClose(newDino, dinosArray) && tries < 12);
+
+    dinosArray.push(newDino);
+  }
+
+  dinos.current = dinosArray;
+}, [count]);
+
+useFrame((state) => {
+  const time = state.clock.elapsedTime;
+
+  dinos.current.forEach((dino) => {
+    // Falling movement
+    dino.y -= dino.speed * 0.09;
+    if (dino.y < -15) {
+      dino.y = Math.random() * 8 + 7;
+      // Reset rotation when respawning
+      dino.rotationX = Math.random() * Math.PI * 2;
+      dino.rotationY = Math.random() * Math.PI * 2;
+      dino.rotationZ = Math.random() * Math.PI * 2;
+      
     }
 
-    for (let i = 0; i < count; i++) {
-      let newDino;
-      let tries = 0;
-
-      do {
-        newDino = {
-        x: (Math.random() - 0.5) * 20, // 👈 wider spread on X
-        y: Math.random() * 10 + 10,     // start above screen
-        z: (Math.random() - 0.5) * 5, // 👈 more depth variety
-        speed: Math.random() * 0.5 + 0.2,
-        scale: Math.random() * 0.5 + 0.3, // size range
-        rotationSpeed: (Math.random() - 0.5) * 0.01,
-        };
-        tries++;
-      } while (isTooClose(newDino, dinosArray) && tries < 10);
-
-      dinosArray.push(newDino);
-    }
-
-    dinos.current = dinosArray;
-  }, [count]);
-
-  useFrame((state) => {
-    dinos.current.forEach((dino) => {
-      dino.y -= dino.speed * 0.05;
-      if (dino.y < -15) dino.y = Math.random() * 8 + 7;
-    });
-
-    group.current.children.forEach((mesh, i) => {
-      const d = dinos.current[i];
-      mesh.position.set(d.x, d.y, d.z);
-      mesh.scale.set(d.scale, d.scale, d.scale);
-      mesh.lookAt(state.camera.position);
-      mesh.rotation.x += Math.PI / 4;
-    });
+    // Update rotations continuously
+    dino.rotationX += dino.rotationSpeedX;
+    dino.rotationY += dino.rotationSpeedY;
+    dino.rotationZ += dino.rotationSpeedZ;
   });
+
+  group.current.children.forEach((mesh, i) => {
+    const d = dinos.current[i];
+    
+    // Add wobble effect for more organic movement
+    const wobbleX = Math.sin(time * d.wobbleSpeed) * d.wobbleAmount;
+    const wobbleZ = Math.cos(time * d.wobbleSpeed * 0) * d.wobbleAmount;
+    
+    mesh.position.set(d.x + wobbleX, d.y, d.z + wobbleZ);
+    mesh.scale.set(d.scale, d.scale, d.scale);
+    
+    // Apply all rotations
+    mesh.rotation.x = d.rotationX;
+    mesh.rotation.y = d.rotationY;
+    mesh.rotation.z = d.rotationZ;
+  });
+});
+// ...existing code...
 
   return (
     <group ref={group}>
@@ -87,7 +122,7 @@ export default function DinoBackground() {
 
         {/* Suspense waits for model loading */}
         <Suspense fallback={null}>
-          <FallingDinos count={15} /> {/* Add 10 falling dinos */}
+          <FallingDinos count={150} /> {/* Add 10 falling dinos */}
         </Suspense>
 
         {/* OrbitControls lets you rotate/zoom (disabled) */}
