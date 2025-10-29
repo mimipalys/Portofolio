@@ -20,5 +20,10 @@
     "idiba": {
         "discription": "Idi.ba var min första inblick i mjukvaruteknik. Kursen leddes av en branschexpert, och syftet med projektet var att uppmuntra studenter att vara innovativa och lära sig. Detta projekt var mitt första fönster in i industrilik programmering: att lära sig kodningsetik, filhantering och mer. Idi.ba var en idé skapad baserat på behovet och bekvämligheten av att införa samåkning i bosniska städer som Sarajevo. Webbplatsen anpassades också till det lokala språket. Den byggdes med Java Spring och Angular. I slutändan, genom denna webbplats, lärde jag mig programmerings- och mjukvarutekniketik, och min kärlek för det växte genom detta projekt.",
         "link": "klicka här för att besöka Idi.ba"
-    }
+    },
+
+    "dogbone": {
+        "discription": "PAWS var mitt första webbprojekt och min första ordentliga inblick i mjukvaru- och produktutveckling. Jag älskade verkligen hur det framhävde min kreativa sida. Genom detta projekt lärde jag mig först att använda HTML, CSS, JavaScript och PHP. PAWS var ett projekt utformat för att låta människor adoptera djur från skyddshem genom vår tjänst. Framför dig är webbplatsens header, formad som ett hundben. Det kanske inte ser så speciellt ut för dig, men för mig bevisade det verkligen att jag kunde koda vad som helst — till och med ett hundben — som nybörjare. Så varsågod och njut av en del av min webbplats som, vid den tiden, fick mig att känna mig så stolt och självsäker — som att jag kunde göra vad som helst efter att ha kodat det XD. Om du är intresserad av att se hela projektkoden, klicka gärna",
+        "here": "HÄR"
+    }    
 }
