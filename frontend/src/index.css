@@ -207,6 +207,7 @@ canvas {
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 450px;
+  z-index: 100;
 }
 
 .project-dino-title h2 {
@@ -242,6 +243,7 @@ canvas {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: justify;
+  z-index: 100;
 }
 
 @keyframes fadeInUp {
@@ -360,6 +362,7 @@ canvas {
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 450px;
+  z-index: 100;
 }
 
 .project-carpool-title h2 {
@@ -395,6 +398,7 @@ canvas {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: justify;
+  z-index: 100;
 }
 
 @keyframes fadeInUp {

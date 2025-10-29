@@ -9,7 +9,7 @@ export default function SectionProjectDino() {
     <section
       className="project-dino-section mask-t-from-95%">
         <video className="background-video" autoPlay muted loop playsInline>
-          <source src="/images/dino-dance.mov" type="video/quicktime" />
+          <source src="/images/dino-dance.mp4" type="video/mp4" />
         </video>
 
 
