@@ -8,6 +8,9 @@ export default function SectionProjectDino() {
   return (
     <section
       className="project-dino-section mask-t-from-95%">
+        <video className="background-video" autoPlay muted loop playsInline>
+          <source src="/images/dino-dance.mov" type="video/quicktime" />
+        </video>
 
 
       {/* Title + dropdown */}
@@ -28,11 +31,7 @@ export default function SectionProjectDino() {
 
       {/* Logo + Download */}
       <div className="project-dino-download">
-        <img
-          src="/images/dogeball.png"
-          alt="Dino Dodgeball Logo"
-          className="project-dino-logo"
-        />
+        
         <p>
           {t("dino.download")}{" "}
           <a href="/documents/DinoDodgeball-windos.zip" className="mac">
