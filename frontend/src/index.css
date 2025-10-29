@@ -208,6 +208,7 @@ canvas {
   border: 1px solid rgba(255, 255, 255, 0.1);
   max-width: 450px;
   z-index: 100;
+  margin-top: 2%;
 }
 
 .project-dino-title h2 {
@@ -497,7 +498,7 @@ canvas {
 .project-dogbone-section {
   position: relative;
   width: 100%;
-  min-height: 130vh;
+  min-height: 140vh;
   padding: 2rem;
 
  background-image:
@@ -654,4 +655,132 @@ canvas {
 .docs-documents a:hover {
   background-color: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
+}
+
+
+/* === media screens === */
+
+/* Base responsive tweaks */
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg { animation: none; }
+  .project-dino-title,
+  .project-carpool-title,
+  .project-dogbone-title { transition: none; }
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  /* Hero */
+  .hero-header { font-size: large; }
+  .hero-header h1 {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .hero-footer { font-size: 1rem; bottom: 0.5rem; }
+  .lang-btn { font-size: 1rem; margin-left: 1rem; margin-top: 1rem; padding: 0.3rem 0.75rem; }
+
+  /* Links section */
+  .links-section { padding: 1.25rem 0 2rem; margin-top: 0; }
+  .links-section h1 { margin-left: 0; padding: 0 1rem 0.5rem; font-size: 1.6rem; }
+  .links-section .flex {
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+    justify-content: center !important;
+    margin-left: 0 !important;
+  }
+  .links-section a {
+    width: 100%;
+    max-width: 420px;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    border-radius: 10px;
+  }
+  .links-section a img { width: 90px; }
+  .links-section a img.cv-img { width: 36px; }
+
+  /* Project sections: titles become full-width cards */
+  .project-dino-section,
+  .project-carpool-section,
+  .project-dogbone-section { padding: 1rem; min-height: 90vh; }
+
+  .project-dino-title,
+  .project-carpool-title,
+  .project-dogbone-title {
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    max-width: none;
+    width: calc(100% - 2rem);
+    padding: 0.85rem;
+    font-size: 1.1rem;
+  }
+
+  .project-dino-description,
+  .project-carpool-description,
+  .project-dogbone-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* Dino download pill: move below logo and shrink */
+  .project-dino-download { display: flex; flex-direction: column; align-items: center; }
+  .project-dino-logo { width: 180px; }
+  .project-dino-download p {
+    position: static;
+    transform: none;
+    margin-top: 0.5rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    display: inline-flex;
+    gap: 0.5rem;
+    background: rgba(0,0,0,0.45);
+  }
+
+  /* Carpool button already responsive, just tighten spacing */
+  .project-carpool-link { margin: 1.25rem auto; }
+
+  /* DogBone header lift: less on mobile */
+  .project-dogbone-header { transform: translateY(-160px); }
+
+  /* Documents grid: 1 column */
+  .docs-section { padding-bottom: 2rem; margin-top: 0; }
+  .docs-section h1 { margin-left: 0; padding: 1rem; font-size: 1.6rem; }
+  .docs-documents {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  .docs-documents a { padding: 0.85rem; font-size: 1rem; }
+}
+
+/* Tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .links-section { padding-bottom: 3rem; }
+  .links-section h1 { font-size: 2rem; }
+  .links-section a img { width: 120px; }
+
+  .project-dino-title,
+  .project-carpool-title,
+  .project-dogbone-title {
+    top: 1.5rem;
+    left: 1.5rem;
+    max-width: 560px;
+    padding: 1rem 1.25rem;
+    font-size: 1.35rem;
+  }
+
+  .project-dogbone-header { transform: translateY(-260px); }
+
+  .docs-documents { grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 1.25rem; }
+}
+
+/* Large desktops */
+@media (min-width: 1280px) {
+  .docs-documents { grid-template-columns: repeat(3, 1fr); }
 }
