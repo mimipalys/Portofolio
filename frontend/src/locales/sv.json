@@ -25,5 +25,11 @@
     "dogbone": {
         "discription": "PAWS var mitt första webbprojekt och min första ordentliga inblick i mjukvaru- och produktutveckling. Jag älskade verkligen hur det framhävde min kreativa sida. Genom detta projekt lärde jag mig först att använda HTML, CSS, JavaScript och PHP. PAWS var ett projekt utformat för att låta människor adoptera djur från skyddshem genom vår tjänst. Framför dig är webbplatsens header, formad som ett hundben. Det kanske inte ser så speciellt ut för dig, men för mig bevisade det verkligen att jag kunde koda vad som helst — till och med ett hundben — som nybörjare. Så varsågod och njut av en del av min webbplats som, vid den tiden, fick mig att känna mig så stolt och självsäker — som att jag kunde göra vad som helst efter att ha kodat det XD. Om du är intresserad av att se hela projektkoden, klicka gärna",
         "here": "HÄR"
-    }    
+    },
+
+    "docs": {
+        "Docs": "Dokument"
+    }
+
+
 }

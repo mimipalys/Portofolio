@@ -5,6 +5,7 @@ import SectionLinks from "./components/SectionLinks";
 import SectionProjectDino from "./components/SectionProjectDino";
 import SectionProjectWeb from "./components/SectionProjectweb";
 import SectionDogBone from "./components/SectionDogBone";
+import SectionDocs from "./components/SectionDocs";
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
       <SectionProjectDino />
       <SectionProjectWeb />
       <SectionDogBone />
+      <SectionDocs />
     </div>
   );
 }

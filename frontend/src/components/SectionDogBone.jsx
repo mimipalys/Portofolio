@@ -7,7 +7,7 @@ export default function SectionDogBone() {
   const [showDescription, setShowDescription] = useState(false);
 
   return (
-    <section className="project-dogbone-section">
+    <section className="project-dogbone-section mask-b-from-95%">
       <div
         className="project-dogbone-title"
         onMouseEnter={() => setShowDescription(true)}

@@ -439,4 +439,46 @@ canvas {
 }
 
 
+/* === Documents Section Styles === */
 
+.docs-section {
+    background: linear-gradient(
+    to bottom,
+    hsla(224, 93%, 5%, 0.9) 10%,
+    hsla(224, 93%, 5%, 0.5) 50%,
+    hsla(224, 93%, 5%, 0) 100%
+  );
+  margin-top: -10%;
+  padding-bottom: 4%;
+}
+
+.docs-section h1{
+  margin-left: 1%;
+  padding-top: 2%;
+  font-size: xxx-large;
+}
+
+.docs-documents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.docs-documents a {
+  display: block;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.docs-documents a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
