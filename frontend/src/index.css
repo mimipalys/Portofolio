@@ -241,6 +241,7 @@ canvas {
   animation: fadeInUp 0.3s ease forwards;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: justify;
 }
 
 @keyframes fadeInUp {
@@ -393,6 +394,7 @@ canvas {
   animation: fadeInUp 0.3s ease forwards;
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: justify;
 }
 
 @keyframes fadeInUp {
@@ -566,6 +568,7 @@ canvas {
   color: rgba(255, 255, 255, 0.9);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 100;
+  text-align: justify;
 }
 
 @keyframes fadeInUp {
