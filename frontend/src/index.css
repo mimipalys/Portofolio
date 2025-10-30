@@ -753,7 +753,7 @@ canvas {
   }
 
   .project-dogbone-section{
-    min-height: 70vh;
+    min-height: 100vh;
   }
 
   /* Carpool button already responsive, just tighten spacing */
