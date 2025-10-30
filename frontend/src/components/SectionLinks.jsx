@@ -32,7 +32,7 @@ export default function LinksSection() {
             
         </a>
         <a
-          href="/documents/CVjune2025.pdf"
+          href="/documents/CV_MuhamedKhatib.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="text-white text-xl border-b border-white w-max hover:text-blue-300 transition"
