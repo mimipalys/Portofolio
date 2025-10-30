@@ -741,6 +741,9 @@ canvas {
     display: inline-flex;
     gap: 0.5rem;
     background: rgba(0,0,0,0.45);
+    border-radius: 0px;
+    width: 100%;
+    display: inline-block;
   }
 
   .project-dino-download p:hover {
