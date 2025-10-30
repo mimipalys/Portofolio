@@ -675,7 +675,7 @@ canvas {
   /* Hero */
   .hero-header { font-size: large; }
   .hero-header h1 {
-    margin-top: 2rem;
+    margin-top: 5rem;
     font-size: 1.4rem;
     text-align: center;
     padding: 0 1rem;
@@ -693,11 +693,11 @@ canvas {
     margin-left: 0 !important;
   }
   .links-section a {
-    width: 100%;
+    width: 80%;
     max-width: 420px;
     justify-content: center;
     padding: 0.5rem 0.75rem;
-    border-radius: 10px;
+    margin-right: 2rem;
   }
   .links-section a img { width: 90px; }
   .links-section a img.cv-img { width: 36px; }
@@ -714,7 +714,7 @@ canvas {
     left: 1rem;
     right: 1rem;
     max-width: none;
-    width: calc(100% - 2rem);
+    width: calc(100% - 15rem);
     padding: 0.85rem;
     font-size: 1.1rem;
   }
@@ -729,39 +729,55 @@ canvas {
 
   /* Dino download pill: move below logo and shrink */
   .project-dino-download { display: flex; flex-direction: column; align-items: center; }
-  .project-dino-logo { width: 180px; }
+  
   .project-dino-download p {
     position: static;
     transform: none;
-    margin-top: 0.5rem;
-    padding: 0.6rem 0.9rem;
-    border-radius: 9999px;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    margin-right: 4rem;
     font-size: 1rem;
     display: inline-flex;
     gap: 0.5rem;
     background: rgba(0,0,0,0.45);
   }
 
+  .project-dino-download p:hover {
+       padding-top: 15rem;
+    padding-bottom: 15rem;
+    transform: none;
+  }
+
+  .project-dogbone-section{
+    min-height: 50vh;
+  }
+
   /* Carpool button already responsive, just tighten spacing */
-  .project-carpool-link { margin: 1.25rem auto; }
+  .project-carpool-link { margin-right: 7rem; }
 
   /* DogBone header lift: less on mobile */
-  .project-dogbone-header { transform: translateY(-160px); }
+  .project-dogbone-header { 
+    transform: translateY(-160px) scale(0.35); 
+    margin-right: 2rem;
+    width: auto;
+    height: auto;
+  }
+  
 
   /* Documents grid: 1 column */
-  .docs-section { padding-bottom: 2rem; margin-top: 0; }
+  .docs-section { padding-bottom: 2rem;}
   .docs-section h1 { margin-left: 0; padding: 1rem; font-size: 1.6rem; }
   .docs-documents {
     grid-template-columns: 1fr;
     gap: 0.75rem;
     padding: 1rem;
   }
-  .docs-documents a { padding: 0.85rem; font-size: 1rem; }
+  .docs-documents a { padding: 0.85rem; font-size: 1rem; width: 80%; margin-left: 2rem; }
 }
 
 /* Tablets */
 @media (min-width: 641px) and (max-width: 1024px) {
-  .links-section { padding-bottom: 3rem; }
+  .links-section { padding-bottom: 3rem; margin-top: -3rem; }
   .links-section h1 { font-size: 2rem; }
   .links-section a img { width: 120px; }
 
@@ -775,12 +791,18 @@ canvas {
     font-size: 1.35rem;
   }
 
-  .project-dogbone-header { transform: translateY(-260px); }
+  .project-dogbone-header { 
+    transform: translateY(-260px) scale(0.5);
+    margin-left: -2.5rem;
+  }
 
   .docs-documents { grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 1.25rem; }
 }
 
 /* Large desktops */
-@media (min-width: 1280px) {
+@media (min-width: 3840px) {
   .docs-documents { grid-template-columns: repeat(3, 1fr); }
+  .hero-section {margin-bottom: 5.6rem;}
+  .project-dogbone-header { transform: translateY(-1000px) scale(2); }
+  .project-dogbone-section { min-height: 190vh; }
 }

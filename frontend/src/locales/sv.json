@@ -2,7 +2,7 @@
   "hero": {
     "title": "Välkommen till Muhamed Khatibs portfoliohemsida",
     "description": "Utforska mina projekt, forskning och 3D-experiment",
-    "footer1": "Byggt med React, TailwindCSS och Three.js",
+    "footer1": "Byggd med ursprunglig 3D-modell, React, TailwindCSS och Three.js",
     "footer2": "Denna webbplats visar upp personligt och samarbetsbaserat arbete"
   },
 

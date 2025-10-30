@@ -2,7 +2,7 @@
   "hero": {
     "title": "Welcome to Muhamed Khatib’s Portfolio Website",
     "description": "Explore my projects, research, and 3D experiments",
-    "footer1": "Built using React, TailwindCSS, and Three.js",
+    "footer1": "Built using original 3D model, React, TailwindCSS, and Three.js",
     "footer2": "This is a personal website showcasing original or collaborative work"
   },
 

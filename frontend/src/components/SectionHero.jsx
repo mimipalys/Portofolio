@@ -6,7 +6,7 @@ export default function SectionHero() {
   const { t } = useTranslation();
 
   return (
-    <section className=" hero-section relative w-full h-screen overflow-hidden">
+    <section className=" hero-section relative w-full h-screen overflow-hidden ">
         
       {/* UI */}
       <div className="absolute top-4 left-4 z-30">
