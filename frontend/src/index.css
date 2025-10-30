@@ -698,7 +698,7 @@ canvas {
     max-width: 420px;
     justify-content: center;
     padding: 0.5rem 0.75rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   .links-section a img { width: 90px; }
   .links-section a img.cv-img { width: 36px; }
@@ -754,7 +754,7 @@ canvas {
   }
 
   /* Carpool button already responsive, just tighten spacing */
-  .project-carpool-link { margin-right: 7rem; }
+  .project-carpool-link { margin-right: 5rem; }
 
   /* DogBone header lift: less on mobile */
   .project-dogbone-header { 
