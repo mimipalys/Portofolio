@@ -758,7 +758,7 @@ canvas {
 
   /* DogBone header lift: less on mobile */
   .project-dogbone-header { 
-    transform: translateY(-160px) scale(0.35); 
+    transform: translateY(-140px) scale(0.35); 
     margin-right: 2rem;
     width: auto;
     height: auto;
