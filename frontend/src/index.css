@@ -736,6 +736,7 @@ canvas {
     transform: none;
     padding-top: 14rem;
     padding-bottom: 14rem;
+    width: 90%;
     margin-right: 4rem;
     font-size: 1rem;
     display: inline-flex;

@@ -34,11 +34,11 @@ export default function SectionProjectDino() {
         
         <p>
           {t("dino.download")}{" "}
-          <a href="/documents/DinoDodgeball-windos.zip" className="mac">
+          <a href="/documents/DinoDodgeball(macOs).zip" className="mac">
             mac
           </a>{" "}
           {t("dino.or")}{" "}
-          <a href="/documents/DinoDodgeball(macOs).zip" className="windows">
+          <a href="/documents/DinoDodgeball-windows.zip" className="windows">
             windows
           </a>
         </p>

@@ -16,9 +16,9 @@ export default function DocsSection() {
         <a href="/documents/Teknologie masterexamen Muhamed Khatib.pdf" target="_blank">Masters Degree Uppsala University</a>
         <a href="/documents/Final BSC Diploma (Buckingham-En).pdf" target="_blank">Bachelors Degree Buckingham University</a>
         <a href="/documents/Final BSC Diploma (SSST-BiH&En).pdf" target="_blank">Bachelors Degree SSST</a>
-        <a href="/documents/Letter of Recommendation - Muhamed Khatib.pdf" target="_blank">Recomendation Letter Sarajevo Unlimited</a>
-        <a href="/documents/recommendation MuhamedKhatib.pdf" target="_blank">Recomendation Letter Dean of CS</a>
-        <a href="/documents/recommendation MuhamedKhatib-JH.pdf" target="_blank">Recomendation Letter department of CS</a>
+        <a href="/documents/Letter of Recommendation - Muhamed Khatib.pdf" target="_blank">Recommendation Letter Sarajevo Unlimited</a>
+        <a href="/documents/recommendation MuhamedKhatib.pdf" target="_blank">Recommendation Letter Dean of CS</a>
+        <a href="/documents/recommendation MuhamedKhatib-JH.pdf" target="_blank">Recommendation Letter department of CS</a>
       </div>
       
     </section>
