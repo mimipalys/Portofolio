@@ -757,11 +757,11 @@ canvas {
   }
 
   /* Carpool button already responsive, just tighten spacing */
-  .project-carpool-link { margin-right: 5rem; }
+  .project-carpool-link { margin-right: 4.5rem; }
 
   /* DogBone header lift: less on mobile */
   .project-dogbone-header { 
-    transform: translateY(-140px) scale(0.35); 
+    transform: translateY(-140px) scale(0.3); 
     margin-right: 2rem;
     width: auto;
     height: auto;
