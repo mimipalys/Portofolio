@@ -673,6 +673,8 @@ canvas {
 
 /* Phones */
 @media (max-width: 640px) {
+
+
   /* Hero */
   .hero-header { font-size: large; }
   .hero-header h1 {
@@ -714,8 +716,7 @@ canvas {
     top: 1rem;
     left: 1rem;
     right: 1rem;
-    max-width: none;
-    width: calc(100% - 15rem);
+    width: 77%;
     padding: 0.85rem;
     font-size: 1.1rem;
   }
@@ -758,7 +759,7 @@ canvas {
   }
 
   /* Carpool button already responsive, just tighten spacing */
-  .project-carpool-link { margin-right: 4.5rem; }
+  .project-carpool-link { margin-right: 0 auto; }
 
   /* DogBone header lift: less on mobile */
   .project-dogbone-header { 
