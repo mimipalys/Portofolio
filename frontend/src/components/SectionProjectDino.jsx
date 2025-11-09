@@ -38,7 +38,7 @@ export default function SectionProjectDino() {
             mac
           </a>{" "}
           {t("dino.or")}{" "}
-          <a href="/documents/DinoDodgeball-windows.zip" className="windows">
+          <a href="/documents/DinoDodgeball-windos.zip" className="windows">
             windows
           </a>
         </p>

@@ -60,7 +60,7 @@ export default function DogBoneHeader() {
                       id="myDropdown"
                       className={`dropdown-content ${menuOpen ? "show" : ""}`}
                     >
-                      <h2>DOG BONE HEADER</h2>
+                      <h2>DOG BONE HEADER DEMO</h2>
                       <hr />
                       <div className="vl"></div>
 
