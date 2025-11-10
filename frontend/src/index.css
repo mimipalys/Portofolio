@@ -805,6 +805,10 @@ canvas {
   .docs-documents { grid-template-columns: repeat(2, 1fr); gap: 1rem; padding: 1.25rem; }
 }
 
+@media (orientation: landscape) and (max-height: 420px) {
+  .hero-section {min-height: 130vh;}
+}
+
 /* Large desktops */
 @media (min-width: 3840px) {
   .docs-documents { grid-template-columns: repeat(3, 1fr); }
